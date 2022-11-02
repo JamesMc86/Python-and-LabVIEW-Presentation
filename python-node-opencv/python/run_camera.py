@@ -3,7 +3,7 @@ import cv2
 
 cv2.namedWindow("video")
 print("Opening capture device")
-vc = cv2.VideoCapture(2)
+vc = cv2.VideoCapture(0)
 analyser = analysis.BlobAnalysis()
 
 
