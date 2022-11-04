@@ -18,6 +18,7 @@ print("Going into loop")
 while rval:
     rval, frame = vc.read()
     analyser.analyse(frame)
+    print(analyser.keypoint_tuples())
     im_with_keypoints = analyser.overlay_image(frame)
     cv2.imshow("video", im_with_keypoints)
     key = cv2.waitKey(20)
